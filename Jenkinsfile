@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('1st Stage) {
+        stage('1st Stage') {
             steps {
-                sh 'echo "Building.."'
+                sh './src/10_date.sh'
             }
         }
         stage('2nd Stage') {
             steps {
-                sh 'echo "Testing.."'
+                sh './src/20_disk.sh'
             }
         }
         stage('3rd Stage') {
             steps {
-                sh 'echo "Deploying...."'
+                sh './src/30_hostname.sh'
             }
         }
     }
