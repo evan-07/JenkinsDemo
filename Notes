@@ -1,0 +1,3 @@
+curl -i http://jenkins.erivanb.me:8080
+curl -i -u erivan-jenkins:11030bb1ea25f7e5289d313e2079527abd "http://jenkins.erivanb.me:8080/job/FP2-erivan/buildWithParameters?env=prod"
+curl -i -u erivan-jenkins:11030bb1ea25f7e5289d313e2079527abd "http://jenkins.erivanb.me:8080/job/FP2-erivan/buildWithParameters?token=apitoken&env=prod"
